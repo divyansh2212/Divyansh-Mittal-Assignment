@@ -1,0 +1,89 @@
+{
+  "id": "dd0c8570-453f-4ac7-aede-bded611f0b51",
+  "version": "2.0",
+  "name": "PDF Download",
+  "url": "https://eservices.tnpolice.gov.in/CCTNSNICSDC/Index?6",
+  "tests": [{
+    "id": "d10f88bd-0a81-4577-97eb-e24cd5fa2389",
+    "name": "Tamil Nadu Police",
+    "commands": [{
+      "id": "b0e106f3-3123-474c-a8b9-8e8dee12f28e",
+      "comment": "",
+      "command": "open",
+      "target": "https://eservices.tnpolice.gov.in/CCTNSNICSDC/Index?6",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "694831fd-08fb-4ff6-a9ce-a6474fa5d763",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66d38831-854f-4060-a0b7-f3ad19fdfe0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(6) > .dropdown-toggle",
+      "targets": [
+        ["css=li:nth-child(6) > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//div/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48800d42-4835-49b5-8db8-365aaf2381b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.open li:nth-child(1) > a",
+      "targets": [
+        ["css=.open li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Download\n\t\t\t\t\t\t\t\t\t\t\tApplication Forms')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[6]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './CitizenDownloadForms')]", "xpath:href"],
+        ["xpath=//li[6]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac0fc407-6443-4d25-a62f-d25e4f7a98ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > td > a > .changefont",
+      "targets": [
+        ["css=tr:nth-child(1) > td > a > .changefont", "css:finder"],
+        ["xpath=//div[@id='belowtopnav']/div/div/div/div[2]/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/a/span", "xpath:idRelative"],
+        ["xpath=//td/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,' Arms License ')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2940",
+      "windowTimeout": 2000
+    }, {
+      "id": "6d13c103-20f0-4779-b8e1-b1137dc8adb5",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edbbca1d-2ffb-4f1b-8e13-96c9d4b888a5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ebf66b14-6283-4a96-8ee4-f35f7532e381",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d10f88bd-0a81-4577-97eb-e24cd5fa2389"]
+  }],
+  "urls": ["https://eservices.tnpolice.gov.in/CCTNSNICSDC/Index?6"],
+  "plugins": []
+}
